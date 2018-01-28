@@ -59,14 +59,19 @@ padding:8px;
 height:46px;
     }
 
+.mini-button{
+  max-width: 20px;
+  max-height: 20px;
+height:50%;
+    width: 50%;
+}
+
 .list {
-      width: 450px;
+      width: 500px;
     }
 .tab {
       height:100%;
     }
 
 .select-item {
-  background-color: #313131;
-  color: #F5F5F5
     }

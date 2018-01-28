@@ -2,28 +2,36 @@
   <material-tab label="Card collection" class="tab">
     <div>
       <ul class="list">
-          <li *ngFor="let item of fC" class="card-c" style="list-style-type:none">
-            <div>
-              <material-input trailingText=" x" [rightAlign]="true" class="card-input" type="number"
-                              [style.color]="item.tC"
-                              [(ngModel)]="item.sQ" (focus)="lS()">
-              </material-input>
-              <span [style.color]="item.tC">{{item.cardName}}</span>
-            </div>
-          </li>
+        <li *ngFor="let item of fC" class="card-c" style="list-style-type:none">
+          <div>
+            <material-fab mini raised
+                          (trigger)="minus(item.cardNumber)">
+              -
+            </material-fab>
+            <material-fab mini raised
+                          (trigger)="sum(item.cardNumber)">
+              +
+            </material-fab>
+            <material-input trailingText="" [rightAlign]="true" class="card-input" type="number"
+                            [style.color]="item.tC"
+                            [(ngModel)]="item.sQ" (focus)="lS()">
+            </material-input>
+            <span [style.color]="item.tC">{{item.cardName}}</span>
+          </div>
+        </li>
       </ul>
       <!--<material-list class="list">-->
-        <!--<div group>-->
-          <!--<material-list-item *ngFor="let item of fC" class="card-c">-->
-            <!--<div>-->
-              <!--<material-input trailingText=" x" [rightAlign]="true" class="card-input" type="number"-->
-                              <!--[style.color]="item.tC"-->
-                              <!--[(ngModel)]="item.sQ" (focus)="lS()">-->
-              <!--</material-input>-->
-              <!--<span [style.color]="item.tC">{{item.cardName}}</span>-->
-            <!--</div>-->
-          <!--</material-list-item>-->
-        <!--</div>-->
+      <!--<div group>-->
+      <!--<material-list-item *ngFor="let item of fC" class="card-c">-->
+      <!--<div>-->
+      <!--<material-input trailingText=" x" [rightAlign]="true" class="card-input" type="number"-->
+      <!--[style.color]="item.tC"-->
+      <!--[(ngModel)]="item.sQ" (focus)="lS()">-->
+      <!--</material-input>-->
+      <!--<span [style.color]="item.tC">{{item.cardName}}</span>-->
+      <!--</div>-->
+      <!--</material-list-item>-->
+      <!--</div>-->
       <!--</material-list>-->
     </div>
     <div>
@@ -108,7 +116,8 @@
   <material-tab label="Calculator Results">
     <div>
       <donate-component></donate-component>
-      <material-button (trigger)="gC()">
+      <material-button
+          [disabled]="ccc!=0" raised (trigger)="gC()">
         Calculate
       </material-button>
       <material-spinner *ngIf="ccc==1"></material-spinner>

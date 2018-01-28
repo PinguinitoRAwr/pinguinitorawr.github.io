@@ -1,0 +1,111 @@
+
+<material-tab-panel>
+  <material-tab label="Card collection">
+    <div>
+      <material-list class="list">
+        <div group>
+          <material-list-item *ngFor="let item of fC" class="card-c"
+          >
+            <div>
+              <material-input trailingText=" x" [rightAlign]="true" class="card-input" type="number"
+                              [style.color]="item.tC"
+                              [(ngModel)]="item.sQ" (focus)="lS()">
+              </material-input>
+              <span [style.color]="item.tC">{{item.cardName}}</span>
+            </div>
+          </material-list-item>
+        </div>
+      </material-list>
+    </div>
+    <div>
+      Filter :
+      <material-dropdown-select
+          [buttonText]="aF"
+          [popupMatchInputWidth]="true">
+        <material-select-item *ngFor="let item of actors"
+                              [value]="aF"
+                              (trigger)="gF(item)"
+                              [selected]="aF == item">
+          {{item}}
+        </material-select-item>
+      </material-dropdown-select>
+    </div>
+  </material-tab>
+  <material-tab label="Skin collection">
+    <div>
+      <material-list class="list">
+        <div group>
+          <material-list-item *ngFor="let item of fS">
+            <span class="skin-card-name" [style.color]="item.tC">{{item.skinName}}</span>
+            <material-toggle [(checked)]="item.iO" label="Owned"></material-toggle>
+          </material-list-item>
+        </div>
+      </material-list>
+    </div>
+    <div>
+      Filter :
+      <material-dropdown-select
+          [buttonText]="aF"
+          [popupMatchInputWidth]="true">
+        <material-select-item *ngFor="let item of actors"
+                              [value]="aF"
+                              (trigger)="gF(item)"
+                              [selected]="aF == item"
+                              useCheckMarks="true">
+          {{item}}
+        </material-select-item>
+      </material-dropdown-select>
+    </div>
+  </material-tab>
+  <material-tab label="Blueprints Wanted">
+    <div>
+      <material-list class="list">
+        <div group>
+          <material-list-item *ngFor="let item of fW">
+            <span class="skin-card-name" [style.color]="item.tC">{{item.skinName}}</span>
+            <material-toggle [(checked)]="item.w" label="Wanted"></material-toggle>
+          </material-list-item>
+        </div>
+      </material-list>
+    </div>
+    <div>
+      Filter :
+      <material-dropdown-select
+          [buttonText]="aF"
+          [popupMatchInputWidth]="true">
+        <material-select-item *ngFor="let item of actors"
+                              [value]="aF"
+                              (trigger)="gF(item)"
+                              [selected]="aF == item"
+                              useCheckMarks="true">
+          {{item}}
+        </material-select-item>
+      </material-dropdown-select>
+    </div>
+  </material-tab>
+  <material-tab label="Calculator Results">
+    <div>
+      <donate-component></donate-component>
+      <material-button (trigger)="gC()">
+        Calculate
+      </material-button>
+      <material-spinner *ngIf="ccc==1"></material-spinner>
+      <span *ngIf="ccc==2" [style.color]="'green'">Finished !</span>
+      <material-list class="list">
+        <div group>
+          <material-list-item *ngFor="let item of rS">
+            {{item.f}}&ensp;<span class="skin-card-name" [style.color]="item.c">{{item.s}}</span>
+          </material-list-item>
+        </div>
+      </material-list>
+      <material-list class="list">
+        <div group>
+          <material-list-item *ngFor="let item of rF">
+            <family-component data="{{fTS(item)}}"></family-component>
+          </material-list-item>
+        </div>
+      </material-list>
+    </div>
+  </material-tab>
+</material-tab-panel>
+

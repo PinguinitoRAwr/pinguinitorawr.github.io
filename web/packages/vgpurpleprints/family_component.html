@@ -1,0 +1,28 @@
+<div [ngSwitch]="length">
+  <div *ngSwitchDefault>
+    <div class="family-title"><h3>{{t()}}</h3></div>
+    <div class="family-title"><span [style.color]="tC()">{{essenceText}}</span></div>
+    <div group class="family-left">
+      <div *ngFor="let item of lf" class="border-five">
+        <div class="family-card"><span [style.color]="cNC(item)">{{cN(item)}}</span></div>
+        <div class="family-card">{{t1(item)}}<span [style.color]="cEC(item)">{{t2(item)}}</span>
+        </div>
+      </div>
+    </div>
+    <div group class="family-right">
+      <div *ngFor="let item of rt" class="border-five">
+        <div class="family-card"><span [style.color]="cNC(item)">{{cN(item)}}</span></div>
+        <div class="family-card">{{t1(item)}}<span [style.color]="cEC(item)">{{t2(item)}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchWhen="1" >
+    <div class="family-title"><h3>{{t()}}</h3></div>
+    <div class="family-title"><span [style.color]="tC()">{{essenceText}}</span></div>
+    <div  class="border-five">
+      <div class="family-card"><span [style.color]="cNC(0)">{{cN(0)}}</span></div>
+      <div class="family-card">{{t1(0)}}<span [style.color]="cEC(0)">{{t2(0)}}</span></div>
+    </div>
+  </div>
+</div>

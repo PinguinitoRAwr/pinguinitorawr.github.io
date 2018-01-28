@@ -1,0 +1,69 @@
+:host {
+  /* This is equivalent of the 'body' selector of a page. */
+}
+
+.first {
+  color: #2196F3;
+}
+
+.is-saved {
+  color: #ccc;
+}
+
+.is-saved .first {
+  color: #ddd;
+}
+
+.skin-card-name {
+  min-width: 200px;
+    }
+
+.family-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:  352px;
+    }
+.family-left {
+	float: left;
+	width: 50%;
+    height:inherit;
+    }
+.family-right {
+	float: left;
+	width: 50%;
+    height:inherit;
+    }
+.family-card {/*
+  padding-top:4px
+  padding-bottom:4px*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    }
+.border-five {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+padding:8px;
+    }
+
+.card-input {
+  padding: 16px;
+     /* width: 50px;*/
+    width: 100%;
+  max-width: 50px;
+    }
+
+.card-c {
+  max-width: 360px;
+height:46px;
+    }
+
+.list {
+      width: 400px;
+    }
+
+.select-item {
+  background-color: #313131;
+  color: #F5F5F5
+    }

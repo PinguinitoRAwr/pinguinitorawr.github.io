@@ -60,7 +60,11 @@ height:46px;
     }
 
 .list {
-      width: 400px;
+      width: 450px;
+      height:100%;
+    }
+.tab {
+      height:100%;
     }
 
 .select-item {

@@ -32,8 +32,8 @@ $default-input-width: $mat-grid * 22;
   // On Firefox, we can't have a baseline-aligned inline-flex element unless the
   // contents are also inline-flex. Context[1][2].
   //
-  // [1]http://stackoverflow.com/a/26567760
-  // [2]http://kizu.ru/en/blog/flex-baseline/
+  // [1]https://stackoverflow.com/a/26567760
+  // [2]https://kizu.ru/en/blog/flex-baseline/
   display: inline-flex;
   flex-direction: column;
 

@@ -19,7 +19,7 @@
 
 // *************************************
 //      Prefixed cursors
-// http://caniuse.com/#feat=css3-cursors-newer
+// https://caniuse.com/#feat=css3-cursors-newer
 // *************************************
 @mixin cursor-grab() {
   cursor: move; // fall back to move if unavailable (IE)

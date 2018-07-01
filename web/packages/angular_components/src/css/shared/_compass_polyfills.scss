@@ -21,42 +21,42 @@
 
 /// Whether a given capability should be prefixed for evergreen browsers.
 $_capability-needs-prefixing: (
-  // http://shouldiprefix.com/#animations
+  // https://shouldiprefix.com/#animations
   css-animation: (
     -moz: true,
     -webkit: true,
   ),
-  // http://shouldiprefix.com/#box-shadow
+  // https://shouldiprefix.com/#box-shadow
   css-boxshadow: (
     -moz: true,
     -webkit: true,
   ),
-  // http://shouldiprefix.com/#filters
+  // https://shouldiprefix.com/#filters
   css-filters: (
     -webkit: true,
   ),
-  // http://shouldiprefix.com/#placeholder
+  // https://shouldiprefix.com/#placeholder
   css-placeholder: (
     -moz: true,
     -ms: true,
     -webkit: true,
   ),
-  // http://shouldiprefix.com/#transitions
+  // https://shouldiprefix.com/#transitions
   css-transitions: (
     -moz: true,
     -o: true,
     -webkit: true,
   ),
-  // http://shouldiprefix.com/#box-sizing
+  // https://shouldiprefix.com/#box-sizing
   css3-boxsizing: (
     -moz: true,
     -webkit: true,
   ),
-  // http://shouldiprefix.com/#flexbox
+  // https://shouldiprefix.com/#flexbox
   flexbox: (
     -webkit: true,
   ),
-  // http://shouldiprefix.com/#transforms
+  // https://shouldiprefix.com/#transforms
   transforms2d: (
     -moz: true,
     -ms: true,
@@ -66,7 +66,7 @@ $_capability-needs-prefixing: (
     -moz: true,
     -webkit: true,
   ),
-  // http://caniuse.com/#feat=user-select-none
+  // https://caniuse.com/#feat=user-select-none
   user-select-none: (
     -moz: true,
     -ms: true,

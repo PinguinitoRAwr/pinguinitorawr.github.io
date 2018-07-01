@@ -91,4 +91,4 @@ Notice that the style of the language in which this guide is written, is mostly 
 
 ## Other Resources
 
-One language and community where good error messages have been discussed intensively is [Elm](http://elm-lang.org/blog/compiler-errors-for-humans).
+One language and community where good error messages have been discussed intensively is [Elm](https://elm-lang.org/blog/compiler-errors-for-humans).

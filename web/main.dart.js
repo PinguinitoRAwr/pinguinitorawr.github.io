@@ -12292,7 +12292,7 @@ $asb:function(){return[V.dK]}},
 Qu:{"^":"b;r,x,y,z,Q,a,b,c,d,e,f",
 j:function(){var z,y,x
 z=document
-y=z.createElementNS("http://www.w3.org/2000/svg","svg")
+y=z.createElementNS("https://www.w3.org/2000/svg","svg")
 this.r=y
 y.setAttribute("buttonDecorator","")
 this.r.setAttribute("class","delete-icon")
@@ -12300,11 +12300,11 @@ this.r.setAttribute("height","24")
 this.r.setAttribute("role","button")
 this.r.setAttribute("viewBox","0 0 24 24")
 this.r.setAttribute("width","24")
-this.r.setAttribute("xmlns","http://www.w3.org/2000/svg")
+this.r.setAttribute("xmlns","https://www.w3.org/2000/svg")
 this.a1(this.r)
 y=this.r
 this.x=new R.eL(new T.ct(new P.A(null,null,0,null,null,null,null,[W.au]),null,!1,!0,null,y),null,null,null,null,null)
-z=z.createElementNS("http://www.w3.org/2000/svg","path")
+z=z.createElementNS("https://www.w3.org/2000/svg","path")
 this.y=z
 this.r.appendChild(z)
 this.y.setAttribute("d","M12 2c-5.53 0-10 4.47-10 10s4.47 10 10 10 10-4.47 10-10-4.47-10-10-10zm5\n               13.59l-1.41 1.41-3.59-3.59-3.59 3.59-1.41-1.41 3.59-3.59-3.59-3.59 1.41-1.41 3.59\n               3.59 3.59-3.59 1.41 1.41-3.59 3.59 3.59 3.59z")
